@@ -1,4 +1,4 @@
-package com.z0o0a.variouslayout
+package com.z0o0a.variouslayout.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

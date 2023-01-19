@@ -3,4 +3,4 @@
   
 [개인 스터디]  
 Android Studio (Kotlin)  
-주요 라이브러리 및 기술 : Custom View, ScrollView, 
+주요 라이브러리 및 기술 : MVVM Pattern Custom View, ScrollView,
