@@ -14,11 +14,12 @@ class RecyclerviewAdapter : RecyclerView.Adapter<RecyclerviewAdapter.BannerViewH
         return BannerViewHolder(binding)
     }
 
-    override fun onBindViewHolder(holder: BannerViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: BannerViewHolder, _position: Int) {
+        val position = _position%bannerList.size
         holder.bind(bannerList[position])
     }
 
-    override fun getItemCount() = bannerList.size
+    override fun getItemCount():Int = Int.MAX_VALUE
 
     inner class BannerViewHolder(val binding: RecyclerviewItemBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(currentBanner : Banner) {
