@@ -9,13 +9,13 @@ class MainActivityVM : ViewModel() {
     var _cooVerti = MutableLiveData<Float>()
     private val _bannerList = MutableLiveData<ArrayList<Banner>>()
     private var items = ArrayList<Banner>()
+
     init {
         _cooVerti.value = 0f
         items = arrayListOf(Banner("NEW"), Banner("RABBIT"), Banner("YEAR!"), Banner("=(:3"))
         _bannerList.value = items
     }
 
-    // Getter (무결성을 위하여)
     val bannerList: LiveData<ArrayList<Banner>> get() = _bannerList
 
     fun getAll():LiveData<ArrayList<Banner>>{
